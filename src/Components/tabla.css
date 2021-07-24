@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+}
+
+main {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Container-box{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-box{
+    margin: 10px;
+    width: 350px;
+    height: 420px;
+    padding: 10px;
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.texto-box{
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: 290px;
+    font-size: 15px;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.info-box img{
+    width: 60%;
+    transition: all 600ms;
+    transform: translateY(50px);
+}
+
+.info-box h2{
+    font-size: 20px;
+    margin-top: 10px;
+    transition: all 700ms;
+    transform: translateY(70px);
+}
+
+.info-box p{
+    opacity: 0;
+    transition: all 800ms;
+    transform: translateY(150px);
+}
+
+.info-box a{
+    opacity: 0;
+    text-decoration: none;
+    transition: all 500ms;
+    transform: translateY(10px);
+}
+
+/* Hover */
+
+.info-box:hover img{
+    transform: translateY(-110px);
+}
+
+.info-box:hover h2{
+    transform: translateY(-110px);
+}
+
+.info-box:hover p{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.info-box:hover a{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
